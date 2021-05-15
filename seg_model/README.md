@@ -66,7 +66,7 @@ The pre-trained segmentation model could be download from NVIDIA NGC:
 
 4.7. Create a folder under the root of Nvidia clara-train-example folder: “seg_model”
 
-4.8. Create “dataset_root” in folder and “seg_model” folder
+4.8. Create “dataset_root” in “seg_model” folder
 
 4.9. Copy and paste those downloaded folders and Ipynb files from DECT into the segmentation folder under the root of the Nvidia clara-train-example folder. e.x. ~/clara-train-examples-master/seg_model.
 
@@ -105,4 +105,4 @@ sudo bash startDocker.sh 8890 '"device=1,3"' 5000
 1. seg_model/eval: segmentation masks (.nii)
 
 ## Next Step
-The next step is [image classification](https://github.com/vtsynergy/DECT/tree/main/classify_model).
+The next step is [image classification](https://github.com/vtsynergy/Analyze-AI/tree/main/classify_model).
