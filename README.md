@@ -1,6 +1,6 @@
-# Segmentation Model
+# Analyze AI
 
-The AI model in this folder is used to segment the lung region from the 3D chest CT images.
+The AI model in this folder is used to segment the lung region from the 3D chest CT images and classify the 3D chest CT images to COVID-19 positive or negative case.
 
 ## Platform
 
@@ -40,7 +40,7 @@ Install Nvidia Clara SDK following the instruction [here](https://docs.nvidia.co
 
 **4. Model Download**
 
-The pre-trained segmentation model could be download from NVIDIA NGC:
+The pre-trained segmentation and classification model could be download from NVIDIA NGC:
 
 4.1. Go to the homepage of NVIDIA NGC [here](https://ngc.nvidia.com/signin) and Log in with a NVIDIA account. If you do not have a NVIDIA account, sign up first.
 
@@ -54,7 +54,7 @@ The pre-trained segmentation model could be download from NVIDIA NGC:
 
 ![image](https://user-images.githubusercontent.com/31482058/114258957-6bf18080-9998-11eb-8828-e4a27c2ff34a.png)
 
-4.4. Click “Download” to download the "clara_train_covid19_ct_lung_seg" package.
+4.4. Click “Download” to download the "clara_train_covid19_ct_lung_seg" or "clara_train_covid19_3d_ct_classification" package. The example in following graph is "clara_train_covid19_ct_lung_seg" package.
 
 ![image](https://user-images.githubusercontent.com/31482058/114258966-7ca1f680-9998-11eb-8b5d-3e7dce27ac9e.png)
 
@@ -64,26 +64,18 @@ The pre-trained segmentation model could be download from NVIDIA NGC:
 
 4.6. Put the “enhancement_model” folder downloaded from DECT into this path: ~/clara-train-examples-master/enhancement_model
 
-4.7. Create a folder under the root of Nvidia clara-train-example folder: “seg_model”
+4.7. Create two foldesr under the root of Nvidia clara-train-example folder: “seg_model” and “classify_model”
 
-4.8. Create “dataset_root” in folder and “seg_model” folder
+4.8. Create “dataset_root” in “seg_model” folder and “classify_model” folder.
 
-4.9. Copy and paste those downloaded folders and Ipynb files from DECT into the segmentation folder under the root of the Nvidia clara-train-example folder. e.x. ~/clara-train-examples-master/seg_model.
+4.9. Copy and paste those downloaded folders and Ipynb files from Analyze-AI repository into the segmentation and classification folders under the root of the Nvidia clara-train-example folder. e.x. ~/clara-train-examples-master/seg_model.
 
 ![image](https://user-images.githubusercontent.com/31482058/114258988-ac50fe80-9998-11eb-8433-30b2c9f2d96a.png)
 
-4.10. The pre-trained models are ready to be used in segmentation. The actual model files are in the “models” folder
+4.10. The pre-trained models are ready to be used in segmentation and classification. The actual model files are in the “models” folder. The pre-trained model could be fine-tuning or re-train by the user's data. We re-trained the classification model with our own dataset consist of CT images from BIMCV, RSNA, MIDRC, and LIDC. The re-trained classification model was used in the DECT testing framework to evaluate the performance of enhancement AI.
 
 ## How to run
-1. Replace the following lines from segmentaion_AI.ipynb with the corresponding data directories. "nii_root" is the path of enhancement model folder. "MMAR_ROOT" is the path of segmentation model folder.
-
-####################DATA DIRECTORY################### 
-
-nii_root = '/claraDevDay/enhancement_model'
-
-MMAR_ROOT="/claraDevDay/seg_model"
-
-#####################################################
+1. Replace the following lines from segmentaion_AI.ipynb (or classification_AI.ipynb) with the corresponding data directories. 
 
 2. Run nvidia-docker:
 
@@ -99,10 +91,8 @@ sudo bash startDocker.sh 8890 '"device=1,3"' 5000
 
 3. Open the JupyterLab link with the browser
 
-4. Run segmentation_AI.ipynb
+4. Run segmentation_AI.ipynb (or classification_AI.ipynb)
 
 ## Output
 1. seg_model/eval: segmentation masks (.nii)
-
-## Next Step
-The next step is [image classification](https://github.com/vtsynergy/DECT/tree/main/classify_model).
+2. classify_model/eval: positive and negative possibility scores (.csv)
