@@ -1,4 +1,4 @@
-# Analyze AI
+# Analysis AI
 
 The AI model in this folder is used to segment the lung region from the 3D chest CT images and classify the 3D chest CT images to COVID-19 positive or negative case.
 
