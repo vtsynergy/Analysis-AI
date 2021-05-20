@@ -2,9 +2,9 @@
 
 The AI model in this folder is used to segment the lung region from the 3D chest CT images and classify the 3D chest CT images to COVID-19 positive or negative case.
 
-The seg_model contains a script used to run segmentation operation when the segmentation model has been set.
+The seg_model contains a script and folder structure used to run segmentation operation when the segmentation model has been set.
 
-The classify_model contains a script used to run classification operation when the classification model has been set.
+The classify_model contains a script and folder structure used to run classification operation when the classification model has been set.
 
 ## Platform
 
