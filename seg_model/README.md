@@ -15,7 +15,7 @@ Distribution: Ubuntu
 Version: 18.04
 
 ## Hardware requirements
-One or more Nvidia GPU. (2+GPUS are recommended for advanced features as AutoML). GPU version is only compatible with Nvidia GPUs having compute capability 6.0 or higher. Meaning, any GPU from Pascal, Volta, Turing, Ampere series will work.
+One or more Nvidia GPUs. (Two or more GPUS are recommended for advanced analysis features.) This GPU version is only compatible with Nvidia GPUs having compute capability 6.0 or higher, i.e., any GPU from Pascal, Volta, Turing, Ampere, and beyond will work.
 
 ## Software requirements
 
