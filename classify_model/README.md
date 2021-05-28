@@ -4,7 +4,7 @@ The AI model in this folder is used to classify the 3D chest CT images to COVID-
 
 ## Platform
 
-We tested the framework on platfrom shown below:
+We tested the framework on platform shown below:
 
 Operating System: Linux
 
@@ -41,7 +41,7 @@ Install Nvidia Clara SDK following the instruction [here](https://docs.nvidia.co
 
 The pre-trained classification model could be download from NVIDIA NGC:
 
-4.1. Go to the homepage of NVIDIA NGC [here](https://ngc.nvidia.com/signin) and Log in with a NVIDIA account. If you do not have a NVIDIA account, sign up first.
+4.1. Go to the homepage of NVIDIA NGC [here](https://ngc.nvidia.com/signin) and Log in with an NVIDIA account. If you do not have an NVIDIA account, sign up first.
 
 ![image](https://user-images.githubusercontent.com/31482058/114258934-46fd0d80-9998-11eb-84ff-8dc16dca538c.png)
 
