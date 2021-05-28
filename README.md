@@ -76,7 +76,7 @@ The pre-trained segmentation and classification model could be download from NVI
 
 ![image](https://user-images.githubusercontent.com/31482058/114258988-ac50fe80-9998-11eb-8433-30b2c9f2d96a.png)
 
-4.10. The pre-trained models are ready to be used in segmentation and classification. The actual model files are in the “models” folder. The pre-trained model could be fine-tuning or re-train by the user's data. We re-trained the classification model with our own dataset consist of CT images from BIMCV, RSNA, MIDRC, and LIDC. The re-trained classification model was used in the DECT testing framework to evaluate the performance of enhancement AI.
+4.10. The pre-trained models are ready to be used in segmentation and classification. The actual model files are in the “models” folder. The pre-trained model could be fine-tuning or re-train by the user's data. We re-trained the classification model with our own dataset consist of CT images from BIMCV, RSNA, MIDRC, and LIDC. The re-trained classification model was used in the DECT testing framework to evaluate the performance of enhancement model.
 
 ## How to run
 1. Replace the following lines from segmentaion_AI.ipynb (or classification_AI.ipynb) with the corresponding data directories. 
