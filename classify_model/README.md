@@ -15,7 +15,7 @@ Distribution: Ubuntu
 Version: 18.04
 
 ## Hardware requirements
-One or more Nvidia GPU. (2+GPUS are recommended for advanced features as AutoML). GPU version is only compatible with Nvidia GPUs having compute capability 6.0 or higher. Meaning, any GPU from Pascal, Volta, Turing, Ampere series will work.
+One or more Nvidia GPUs. (Two or more GPUS are recommended for advanced analysis features.) This GPU version is only compatible with Nvidia GPUs having compute capability 6.0 or higher, i.e., any GPU from Pascal, Volta, Turing, Ampere, and beyond will work.
 
 ## Software requirements
 Nvidia-docker and Nvidia Clara SDK are required to run the package. If you already have docker installed then user should be in the docker group. Otherwise, sudo access is needed to install the prerequisite. Nvidia Clara SDK requires Nvidia CUDA 11.0.194 and Nvidia Driver release 450 or later.
