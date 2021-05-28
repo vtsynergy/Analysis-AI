@@ -8,7 +8,7 @@ The classify_model contains a script and folder structure used to run classifica
 
 ## Platform
 
-We tested the framework on platfrom shown below:
+We tested the framework on platform shown below:
 
 Operating System: Linux
 
@@ -46,7 +46,7 @@ Install Nvidia Clara SDK following the instruction [here](https://docs.nvidia.co
 
 The pre-trained segmentation and classification model could be download from NVIDIA NGC:
 
-4.1. Go to the homepage of NVIDIA NGC [here](https://ngc.nvidia.com/signin) and Log in with a NVIDIA account. If you do not have a NVIDIA account, sign up first.
+4.1. Go to the homepage of NVIDIA NGC [here](https://ngc.nvidia.com/signin) and Log in with an NVIDIA account. If you do not have an NVIDIA account, sign up first.
 
 ![image](https://user-images.githubusercontent.com/31482058/114258934-46fd0d80-9998-11eb-84ff-8dc16dca538c.png)
 
@@ -68,7 +68,7 @@ The pre-trained segmentation and classification model could be download from NVI
 
 4.6. Put the “enhancement_model” folder downloaded from DECT into this path: ~/clara-train-examples-master/enhancement_model
 
-4.7. Create two foldesr under the root of Nvidia clara-train-example folder: “seg_model” and “classify_model”
+4.7. Create two folders under the root of Nvidia clara-train-example folder: “seg_model” and “classify_model”
 
 4.8. Create “dataset_root” in “seg_model” folder and “classify_model” folder.
 
