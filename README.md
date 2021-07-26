@@ -23,7 +23,7 @@ One or more Nvidia GPUs. (Two or more GPUS are recommended for advanced analysis
 
 ## Software requirements
 
-Nvidia-docker and Nvidia Clara SDK are required to run the package. If you already have docker installed then user should be in the docker group. Otherwise, sudo access is needed to install the prerequisite. Nvidia Clara SDK requires Nvidia CUDA 11.0.194 and Nvidia Driver release 450 or later.
+Nvidia-docker and Nvidia Clara SDK are required to run the package. If you already have docker installed then user should be in the docker group. Otherwise, sudo access is needed to install the prerequisite. Nvidia Clara SDK requires Nvidia CUDA 11.0.194 and Nvidia Driver release 450 or later. It requires Clara Train 3.1 with TensorFlow (Clara Train 4.0 with PyTorch is not supported now).
 
 ## Installation
 
