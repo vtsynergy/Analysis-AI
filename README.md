@@ -100,9 +100,11 @@ sudo bash startDocker.sh 8890 '"device=1,3"' 5000
 ## Run as a non-privileged user in a multi-user environment
 1. Add user to the docker group
 2. Add the following to the run line in startDocker.sh
+```
   --user $(id -u):$(id -g) \
   -v ${HOME}/.local/:/.local/ \
   -v ${HOME}/.config/:/.config/ \
+```
  Making sure that the .local and .config directories exist in the user's home directory on the host system
 3. When calling the./startDocker.sh script pay attention to whether any of the default ports are already in use, if so you can override them on the command line. (port for notebook and AIAA_PORT). You do not need to make any changes to the port bindings on the docker run line, the script remaps them itself.
 4. Allow jupyter lab to listen to traffic originating from machines other than localhost. Add the --ip=0.0.0.0 flag in the startJupyter script (Recommended to only use behind a firewall)
