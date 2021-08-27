@@ -111,7 +111,7 @@ sudo bash startDocker.sh 8890 '"device=1,3"' 5000
 
 4. Allow jupyter lab to listen to traffic originating from machines other than localhost. Add the --ip=0.0.0.0 flag in the startJupyter script (Recommended to only use behind a firewall)
 
-5. Charon-specific: Use a SOCKS proxy to forward HTTP traffic over SSH so you can access the Jupyter lab HTTP interface without being physically on the system. 
+5. (Option) If behind a firewall: Use a SOCKS proxy to forward HTTP traffic over SSH so you can access the Jupyter lab HTTP interface without being physically on the system. 
 
 ## Output
 1. seg_model/eval: segmentation masks (.nii)
